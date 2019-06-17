@@ -19,7 +19,7 @@ before_install:
   - docker build -t miksvas/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run stephengrider/react-test npm test -- --coverage
+  - docker run miksvas/react-test npm test -- --coverage
 
 deploy:
   provider: script
